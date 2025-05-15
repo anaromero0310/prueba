@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+        }
+        
+        .contenedor {
+            max-width: 390px;
+            margin: 0 auto;
+            background-color: white;
+            height: 100vh;
+            overflow-y: auto;
+            position: relative;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .encabezado{
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            color: #ff8000;
+            font-size: 28px;
+        }
+        
+        .menu-icono {
+            font-size: 24px;
+            cursor: pointer;
+        }
+        
+        .titulo {
+            padding: 0 20px;
+            margin-bottom: 20px;
+        }
+        
+        .titulo h1 {
+            font-size: 28px;
+            font-weight: bold;
+            line-height: 1.2;
+        }
+        
+        .busqueda {
+            margin: 0 20px;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        
+        .distancia {
+            width: 100%;
+            padding: 12px 20px;
+            padding-left: 40px;
+            border-radius: 25px;
+            border: none;
+            background-color: #f1f1f1;
+            font-size: 16px;
+        }
+        
+        .busqueda-icono {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            color: #888;
+        }
+        
+        .icono{
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            color: #333;
+        
+        }
+        
+        .distancia {
+            padding: 0 20px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .distancoa h2 {
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        
+        .distancia span {
+            color: #ff8000;
+            font-size: 20px;
+        }
+        
+        .distancia .flecha{
+            margin-left: 5px;
+        }
+        
+        .categorias {
+            display: flex;
+            padding: 0 20px;
+            margin-bottom: 20px;
+            gap: 10px;
+            overflow-x: auto;
+          
+        }
+        
+        
+        .categorias {
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 16px;
+          
+           
+        }
+        
+        .categoriasparavos {
+            background-color: #ffbf00;
+            color: black;
+        }
+        
+        .alimentos {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 10px;
+            gap: 10px;
+        }
+        
+        .tarjetaAlimentos {
+            width: calc(50% - 10px);
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+        
+        .imagen {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        
+        .detalleComida {
+            padding: 15px;
+        }
+        
+        .detalleComida {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        
+        .comidainfo {
+            display: flex;
+            align-items: center;
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        
+        .comidainfo .dot {
+            margin: 0 5px;
+            font-size: 8px;
+        }
+        
+        .precioComida{
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+            
+    <div class="contenedor">
+        <div class="encabezado">
+            <div class="logo"><i class="fa-solid fa-fire-flame-curved"></i></div>
+            <div class="menu-icono"><i class="fa-solid fa-bars-staggered"></i></div>
+        </div>
+        
+        <div class="titulo">
+            <h1>Encontrá buena comida cerca tuyo</h1>
+        </div>
+        
+        <div class="busqueda">
+            <span class="busqueda-icono"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <input type="text" class="busqueda" placeholder="Buscá tu plato acá...">
+            <span class="icono"><i class="fa-solid fa-sliders-simple"></i></span>
+        </div>
+        
+        <div class="distancia">
+            <h2>Encontrados</h2>
+            <span>5km</span>
+            <span class="flecha">›</span>
+        </div>
+        
+        <div class="categorias">
+            <div class="categoriasparavos">Ensaladas</div>
+            <div class="categoria">Comidas Calientes</div>
+            <div class="categoria">Popular</div>
+        </div>
+        
+        <div class="alimentos">
+            <div class="tarjetaAlimentos">
+                <img src="img/food-photographer-david-fedulov-FtpgFeUQuAY-unsplash (1) 3 (2).png" alt="Broccoli Mix" class="imagen">
+                <div class="detalleComida">
+                    <div class="nombreComida">Broccoli Mix</div>
+                    <div class="comidainfo">
+                        <span>30mins</span>
+
+                        <span class="punto">•</span>
+                        <span>4.5 ★</span>
+                    </div>
+                    <div class="precioComida">$4650.00</div>
+                </div>
+            </div>
+            
+            <div class="Alimentos">
+                <img src="img/food-photographer-david-fedulov-FtpgFeUQuAY-unsplash (1) 3 (3).png" alt="Chicken Veggie" class="imagen">
+                <div class="detalleComida">
+                    <div class="nombreComida">Chicken Veggie</div>
+                    <div class="comidainfo">
+                        <span>30mins</span>
+                        <span class="punto">•</span>
+                        <span>4.5 ★</span>
+                    </div>
+                    <div class="precioComida">$3850.00</div>
+                </div>
+
+
+                <div class="alimentos">
+                    <div class="tarjetaAlimentos">
+                        <img src="img/food-photographer-david-fedulov-FtpgFeUQuAY-unsplash (1) 3.png" alt="Ensalada mixta con hongos" class="imagen">
+                        <div class="detalleComida">
+                            <div class="nombreComida">Ensalada mixta con hongos</div>
+                            <div class="comidainfo">
+                                <span>30mins</span>
+                                <span class="punto">•</span>
+                                <span>4.5 ★</span>
+                            </div>
+                            <div class="precioComida">$4950.00</div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
